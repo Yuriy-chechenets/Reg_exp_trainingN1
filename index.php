@@ -11,3 +11,9 @@
 
 */
 include_once('text.php'); // Подключили текст с переменной $text
+
+// Сейчас разобъем текст по абзацам и выведнм полученный массив
+$arrayText=preg_split("[\r\n]", $text);
+echo "<pre>";
+print_r($arrayText);
+echo "</pre>";
